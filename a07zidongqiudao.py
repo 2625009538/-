@@ -15,7 +15,7 @@ y = x.sum()
 y.backward()
 print(x.grad)
 
-# 如果你不想grad直接从3级到1级，只想到2级怎么办？
+# 如果你不想grad直接从3级到1级，只想到2级怎么办？？
 x.grad.zero_()
 y = x * x
 u = y.detach()#就是把y的结果看成一个标量，不会再从2级到1级了
