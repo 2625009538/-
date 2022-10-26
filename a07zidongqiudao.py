@@ -20,6 +20,6 @@ x.grad.zero_()
 y = x * x
 u = y.detach()#就是把y的结果看成一个标量，不会再从2级到1级了
 z = u * x
-z.sum().backward()#必须要有啊
+z.sum().backward()#必须要有啊1
 print(x.grad == u)
 
